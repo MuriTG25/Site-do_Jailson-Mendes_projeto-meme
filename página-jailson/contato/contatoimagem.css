@@ -1,0 +1,109 @@
+/*cores de fundo*/
+header 
+	{background: #802f0a;}
+body
+	{background: linear-gradient(#b0410e 33%, #91360c 66%);}
+footer
+	{background: #802f0a;}
+	
+/*fonte*/
+body{font-family: 'Montserrat', sans-serif;}
+
+/*caixa do topo*/
+.caixa 
+	{position: relative;width: calc(20% + 600px);
+	 margin: 0 auto;
+	 padding: 10px 0}
+#logo 
+	{display:inline-block;}
+#logo:hover {width: 240px}
+
+/*menu de navegação*/
+nav 
+	{position: absolute; 
+	top: 110px;
+	right: 0px}
+nav li 
+	{display:inline;margin: 0 0 0 20px;}
+nav a 
+	{text-transform: uppercase;
+	color: #000000; 
+	font-weight: bold;
+	font-size: 32px;
+	text-decoration: none;}
+nav a:hover {
+	color: #C78C19;
+	text-decoration: underline;
+}
+
+/*formulário*/
+main 
+	{width: calc(20% + 600px);
+	margin: 0 auto;}
+form 
+	{margin: 40px 0}
+form label, form legend
+	{display: block;
+	font-size: 20px;
+}
+.bloco label, form legend
+	{margin: 0 0 10px}
+
+.bloco input, form textarea 
+	{width: 50%;
+	display: block;
+	margin: 0 0 20px;
+	padding: 10px;}
+.meiodecontato input
+	{display: inline-block;}
+.checkbox, .enviar 
+	{margin: 20px 0 0}
+#horario, #prefcontato, #servico
+	{margin: 20px 0 10px}
+.enviar 
+	{padding: 5px 15px;
+	font-size: 20px; 
+	border-radius: 6px;
+	font-weight: bold;
+	transition: 1s all;
+}
+.enviar:hover 
+	{background: #c4c2c2;
+	transform: scale(1.4);
+}
+
+.enviar,select,.meiodecontato label 
+	{cursor: pointer;} 
+
+table 
+	{margin: 30px 0;
+}
+thead 
+	{font-weight: bold;
+	background: #c4c2c2;}
+tbody 
+	{background: white;
+}
+th,td 
+	{border: 2px solid #000000;
+	padding: 5px 30px;
+	text-align: center;
+}
+
+/*rodapé*/
+footer 
+	{text-align: center;}
+#logorodape 
+	{width: 100px}
+#copyright 
+	{font-size: 13px;padding: 10px 0 30px 0}
+
+/*adaptação mobile*/
+@media screen and (max-width: 480px) 
+	{
+	.logo {display: block; width: 33%; margin: 0 auto;}
+	.caixa,main {width: auto;} 
+	nav {position:static;}
+	th,td {padding: 5px 5px}
+	.bloco input,form textarea{width: 90%}
+}

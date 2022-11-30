@@ -1,0 +1,141 @@
+/*cores de fundo*/
+header 
+	{background: #802f0a;}
+body 
+	{background: #b0410e;}
+.principal 
+	{background: #b0410e;}
+.mapa 
+	{background: linear-gradient(#b0410e,#91360c);}
+.beneficios 
+	{background: #91360c;}
+footer
+	{background: #802f0a;}
+
+/*fonte*/
+body{font-family: 'Montserrat', sans-serif;}
+
+/*caixa do topo*/	
+.caixa {position: relative;width: calc(20% + 600px); margin: 0 auto;padding-top: 10px 0}
+.logo {display:inline-block;}
+.logo:hover {width: 240px}
+
+/*menu de navegação*/
+nav 
+	{position: absolute; 
+	top: 110px;
+	right: 0px}
+nav li 
+	{display:inline;margin: 0 0 0 20px;}
+nav a 
+	{text-transform: uppercase;
+	color: #000000; 
+	font-weight: bold;
+	font-size: 32px;
+	text-decoration: none;}
+nav a:hover {
+	color: #C78C19;
+	text-decoration: underline;
+}
+
+/*menu de descrição*/
+.principal
+ {padding: 0 100px}
+.jailson 
+	{width: 100%}
+.tit-principal 
+	{text-align: center;
+	font-size:2em;
+	font-weight: bold;
+	padding: 1em 0;
+	clear: left;
+	text-shadow: 3px 3px 8px #000000
+}
+.tit-principal:before{content:"[ "}
+.tit-principal:after{content:" ]"}
+
+.jailson2
+	{width: 125px;
+	float: left;
+	margin-right: 20px;
+	opacity: 0.75;
+	box-shadow: 8px 8px 16px #000000;
+}
+
+.jailson2:hover,.guina:hover {opacity: 1}
+
+.principal  p
+	{margin: 1em 0;
+	font-size:16px;
+}
+#missao 
+	{font-size:20px;
+	font-style: italic;
+}
+em strong
+	{color:#FFD700;}
+
+/*menu do mapa*/
+.mapa p {
+	margin-bottom: 20px;
+}
+.mapa {text-align: center;
+}
+p + iframe {width:calc(20% + 600px)}
+
+/*menu de benefícios*/
+#titubene 
+	{text-align: center;
+	background: #692c0f;
+	font-size:30px;
+	font-weight: bold;
+	border: 10px solid #000000;
+	margin-bottom: 30px;
+	margin-top: 60px}
+.bene:before{content:"\2737"}
+.bene 
+	{font-style: italic;
+	font-size:16px;
+	line-height: 2;
+}
+.bene:first-child,.bene:nth-child(3), .bene:nth-child(5)
+	{font-weight: bold;}
+
+.cont-bene
+	{width: 800px;
+	margin: 0 auto;}
+.beneficios ul 
+	{width: 50%;
+	display: inline-block;
+	vertical-align: top;
+}
+.guina
+	{width: 50%;
+	opacity: 0.75;
+	box-shadow: 10px 10px 20px #000000;
+}
+.video
+	{width:560px;
+	margin: auto;
+	padding: 20px;
+}
+/*rodapé*/
+footer 
+	{text-align: center;}
+#logorodape 
+	{width: 100px;
+}
+#copyright 
+	{font-size: 13px;padding: 10px 0 30px 0}
+
+/*adaptação mobile*/
+@media screen and (max-width: 480px) 
+	{
+	.beneficios ul{display: block;}
+	.principal{padding: 0}
+	.logo {display: block; width: 33%; margin: 0 auto;}
+	p + iframe,.video iframe,.caixa,.principal,.cont-bene,.video,.beneficios ul 
+	{width: auto;} 
+	.jailson,.guina{width:100%}
+	nav {position:static;}
+}
